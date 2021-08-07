@@ -5,17 +5,30 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{settings.canonical}}">
+    <meta property="og:url"  content="{{settings.canonical}}">
+    <meta name="twitter:url" content="{{settings.canonical}}">
     <title>
       {{title}}
     </title>
+    <meta property='og:title'  content='{{title}}'>
+    <meta name='twitter:title' content='{{title}}'>
     {% if description %}
       <meta name="description" content="{{description}}"/>
+      <meta property="og:description"  content="{{description}}">
+      <meta name="twitter:description" content="{{description}}">
+    {% endif %}
+    {% if img %}
+      <meta property="og:image"  content="{{img}}">
+      <meta name="twitter:image" content="{{img}}">
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
+    <meta property="og:site_name" content="{{settings.name}}">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="Web Developer, Midwest, ecommerce, shopify, shopify expert, shopify partner, freelance, Springfield">
   </head>
   <body>
     {% include "./partials/navbar.html" %}
