@@ -1,8 +1,8 @@
 ---
 items:
-  - text: About Us
-    url: "/about-us"
-  - text: Services
-    url: "/services"
-  - text: Contact
-    url: "/contact"
+  # - text: About
+  #   url: "/about"
+  # - text: Services
+  #   url: "/services"
+  # - text: Contact
+  #   url: "/contact"

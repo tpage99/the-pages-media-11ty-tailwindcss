@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{settings.canonical}}">
     <title>
       {{title}}
     </title>
@@ -20,6 +21,29 @@
     {% include "./partials/navbar.html" %}
 
     {{ content | safe }}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Business",
+        "image": "{{settings.canonical}}/static/img/taylor_profile_sq.jpg",
+        "name": "The Pages Media",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "117 Ridgeview Drive",
+          "addressLocality": "Willard",
+          "addressRegion": "MO",
+          "postalCode": "65781",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.28971184334364,
+          "longitude": -93.43314287358758
+        },
+        "url": "https://www.thepagesmedia.com",
+        "telephone": "+14174239253"
+      }
+      </script>
 
     {% include "./partials/footer.html" %}
 
