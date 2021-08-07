@@ -1,22 +1,36 @@
 ---
 layout: default
-title: Neat Starter
+title: The Pages Media
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<div class="mx-auto pt-6 lg:pt-36 px-4 lg:px-8 max-w-screen-xl lg:h-screen flex flex-col justify-center items-center">
+  <h2 class="h1">
+    <strong>Digital Solutions for <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Businesses that Rock</span></strong>
+  </h2>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
+  <h3 class="h2">
+    Get help selling online. Whether your business does <span class="highlight underline">$50k/month</span> or <span class="highlight underline">$5,000</span>.
+  </h3>
+  <p class="promo-text"> 
+    We help build solutions that fit you and your business model <em>now</em> and get you ready to scale.
   </p>
-
-  {% include "./_includes/partials/content.html" %}
+  <div class="py-4 lg:py-12">
+    <div class="py-8 px-8 mx-auto bg-white rounded shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0 border border-purple-200" src="/static/img/taylor_profile_sq.jpg" alt="taylor page, freelance web developer and shopify expert">
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg text-black font-semibold">
+            Taylor Page
+          </p>
+          <p class="text-gray-500 font-medium">
+            Freelance Web Developer and Shopify Expert
+          </p>
+        </div>
+        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-indigo-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+          <a href="https://www.trpage.dev/contact">Start a Project</a>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

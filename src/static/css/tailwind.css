@@ -4,12 +4,24 @@
 
 /*Your Custom CSS Goes here*/
 
-h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+h1, .h1 {
+  @apply text-4xl tracking-tighter text-center lg:text-7xl lg:leading-none;
+}
+
+h2, .h2 {
+  @apply text-2xl mb-3 text-center lg:text-5xl leading-7 lg:leading-tight;
 }
 
 h3 {
   @apply text-2xl font-bold mb-3;
+}
+
+.promo-text {
+  @apply text-lg lg:text-2xl text-center;
+}
+
+.highlight {
+  @apply bg-yellow-500 text-white px-2;
 }
 
 /* Syntax Highlighting*/

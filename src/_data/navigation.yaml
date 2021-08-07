@@ -1,10 +1,8 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: About Us
+    url: "/about-us"
+  - text: Services
+    url: "/services"
+  - text: Contact
+    url: "/contact"
