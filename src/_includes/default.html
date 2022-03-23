@@ -31,9 +31,11 @@
     <meta name="keywords" content="Web Developer, Midwest, ecommerce, shopify, shopify expert, shopify partner, freelance, Springfield">
   </head>
   <body>
-    {% include "./partials/navbar.html" %}
+    <main>
+      {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+      {{ content | safe }}
+    </main>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -61,6 +63,7 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+    <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Vq5WA2"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->

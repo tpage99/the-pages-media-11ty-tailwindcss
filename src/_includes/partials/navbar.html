@@ -1,8 +1,10 @@
 <div class="{{ 'lg:fixed' if path == 'home' }} w-full">
     <nav class="flex lg:justify-between flex-wrap p-6 lg:px-4 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <!--Logo etc-->
-        <h1 class="font-bold text-lg bg-indigo-500 text-white px-4 py-2 shadow-lg rounded">
-            The Pages Media
+        <h1 class="max-w-xs">
+            <a href="/">
+                <img src="https://res.cloudinary.com/tpage99/image/upload/v1648003177/The%20Pages%20Media/logo_text_alt.png" alt="text logo that reads the pages media in black with logo to the left in orange">
+            </a>
         </h1>
 
         <!--Toggle button (hidden on large screens)-->
