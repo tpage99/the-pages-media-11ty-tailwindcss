@@ -29,10 +29,11 @@ html, body {
 main {
   min-height: 100vh;
 }
-div#courses-template h1, div#accessibility-template h1, div#privacy-policy-template h1  {
+div#courses-template h1, div#accessibility-template h1, div#privacy-policy-template h1,
+div#downloads-template h1  {
   @apply mb-10;
 }
-div#courses-template p, div#accessibility-template p, div#privacy-policy-template p  {
+div#courses-template p, div#accessibility-template p, div#privacy-policy-template p, div#downloads-template p  {
   @apply max-w-5xl text-center text-lg md:text-xl mb-8 mx-auto;
 }
 a.glo-btn {
@@ -42,6 +43,12 @@ a.glo-btn {
   background-color: #d97706;
   border-radius: 30px;
   box-shadow: 0 0 1.5rem 0 #d97706;
+}
+a.action-btn {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  background-color: #d97706;
+  border-radius: 30px;
 }
 @media screen and (max-width: 799px) {
   a.glo-btn {
